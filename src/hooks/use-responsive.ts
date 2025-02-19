@@ -1,4 +1,6 @@
-import { useState, useEffect } from 'react';
+"use client";
+
+import { useState, useEffect } from "react";
 
 const breakpoints: Record<string, number> = {
   xs: 480,
@@ -11,22 +13,22 @@ const breakpoints: Record<string, number> = {
 type Breakpoint = keyof typeof breakpoints;
 
 const useResponsive = (breakpoint: Breakpoint): boolean => {
-  const [matches, setMatches] = useState<boolean>(
-    window.matchMedia(`(max-width: ${breakpoints[breakpoint]}px)`).matches,
-  );
+  const [matches, setMatches] = useState<boolean>(() => {
+    if (typeof window === "undefined") return false; // Handle SSR
+    return window.matchMedia(`(max-width: ${breakpoints[breakpoint]}px)`)
+      .matches;
+  });
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia(
-      `(max-width: ${breakpoints[breakpoint]}px)`,
-    );
+    if (typeof window === "undefined") return; // Ensure it only runs in the client
 
+    const mediaQuery = window.matchMedia(
+      `(max-width: ${breakpoints[breakpoint]}px)`
+    );
     const handler = (e: MediaQueryListEvent) => setMatches(e.matches);
 
-    mediaQuery.addEventListener('change', handler);
-
-    return () => {
-      mediaQuery.removeEventListener('change', handler);
-    };
+    mediaQuery.addEventListener("change", handler);
+    return () => mediaQuery.removeEventListener("change", handler);
   }, [breakpoint]);
 
   return matches;

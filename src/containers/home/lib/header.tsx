@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Tooltip,
   TooltipContent,
@@ -65,10 +67,12 @@ export default function Header({ activeSection }: HeaderProps) {
                       0
                     );
 
-                    window?.scrollTo({
-                      behavior: "smooth",
-                      top: scrollTop,
-                    });
+                    if (typeof window !== "undefined") {
+                      window?.scrollTo({
+                        behavior: "smooth",
+                        top: scrollTop,
+                      });
+                    }
                   }}
                 >
                   <Icon />
