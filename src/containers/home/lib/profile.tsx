@@ -57,7 +57,7 @@ export default function Profile({ onCopyEmail }: { onCopyEmail: () => void }) {
           <div className="absolute h-5 aspect-square bg-green-600 rounded-full inline-flex md:hidden top-4 right-4" />
           <div className="min-h-40 min-w-40 h-40 w-40 bg-secondary/80 rounded-full p-2 border overflow-hidden flex justify-center items-center">
             <Image
-              src="https://picsum.photos/seed/picsum/200/300"
+              src="/assets/img/profile-picture.png"
               alt="Mr. Aron"
               unoptimized
               className="h-full w-full rounded-full"

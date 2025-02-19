@@ -33,7 +33,7 @@ const projectsList = [
     title: "MyCarrier - Internal",
     description: "Telkom Indonesia Wholesale Platform for Internal",
     preview: "/assets/img/myc-internal-preview.png",
-    link: "https://internal-mycarrier.telkom.co.id/",
+    // link: "https://internal-mycarrier.telkom.co.id/",
     tags: [
       "Dashboards",
       "Content Management",
@@ -127,7 +127,7 @@ export default function Projects() {
               </div>
             </AccordionTrigger>
             <AccordionContent className="pb-4 px-4 bg-primary/5 w-full lazy-load flex flex-col gap-3">
-              <div className="flex flex-row gap-2 flex-wrap">
+              <div className="flex flex-row gap-2 md:flex-wrap flex-nowrap overflow-auto pb-2 -mb-2">
                 {project?.tags?.map((tag, index) => (
                   <Badge
                     key={index}
