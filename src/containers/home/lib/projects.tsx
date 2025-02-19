@@ -39,7 +39,7 @@ const projectsList = [
       "Monitoring",
       "Lead Tracking",
       "Fault Handling",
-      "Doc Generation",
+      "Generate Doc",
       "Billing & Payments",
     ],
   },
@@ -64,11 +64,14 @@ const projectsList = [
     icon: "/assets/img/dev-logo.png",
     title: "MyTDS SSOF",
     description: "Telkom Indonesia Order Validation System",
-    preview: "/assets/img/myc-preview.png",
+    preview: "/assets/img/mytds-preview.png",
+    link: "https://www.mytens.co.id/",
     tags: [
       "AI Document Verification",
       "Automated Order Validation",
       "Predictive Analytics",
+      "OCR Document",
+      "Dashboard Report",
     ],
   },
   {
@@ -76,7 +79,7 @@ const projectsList = [
     icon: "/assets/img/pertamina-logo.png",
     title: "DPPU - Halim Perdanakusuma",
     description: "Pertamina Inventory Management",
-    preview: "/assets/img/myc-preview.png",
+    preview: "/assets/img/dppu-preview.png",
     tags: [
       "Inventory Management",
       "Scheduling Maintenance",
