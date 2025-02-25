@@ -13,10 +13,10 @@ import { Badge } from "@/components/ui/badge";
 const projectsList = [
   {
     id: "item-1",
-    icon: "/assets/img/myc-logo.png",
+    icon: "https://i.ibb.co.com/jvLztMgm/myc-logo.png",
     title: "MyCarrier",
     description: "Telkom Indonesia Wholesale Platform",
-    preview: "/assets/img/myc-preview.png",
+    preview: "https://i.ibb.co.com/yF7yyD3z/myc-preview.png",
     link: "https://mycarrier.telkom.co.id/",
     tags: [
       "Customer Portal",
@@ -29,10 +29,10 @@ const projectsList = [
   },
   {
     id: "item-2",
-    icon: "/assets/img/myc-logo.png",
+    icon: "https://i.ibb.co.com/jvLztMgm/myc-logo.png",
     title: "MyCarrier - Internal",
     description: "Telkom Indonesia Wholesale Platform for Internal",
-    preview: "/assets/img/myc-internal-preview.png",
+    preview: "https://i.ibb.co.com/n8LjwTfV/myc-internal-preview.png",
     // link: "https://internal-mycarrier.telkom.co.id/",
     tags: [
       "Dashboards",
@@ -47,10 +47,10 @@ const projectsList = [
   },
   {
     id: "item-4",
-    icon: "/assets/img/fxc-logo.png",
+    icon: "https://i.ibb.co.com/R4G0DjR2/fxc-logo.png",
     title: "Finn & Chips",
     description: "Finn & Chips Smart Order & Content Management System",
-    preview: "/assets/img/fxc-preview.png",
+    preview: "https://i.ibb.co.com/TDXk3DhX/fxc-preview.png",
     tags: [
       "Customer Portal",
       "Point of Sales",
@@ -63,10 +63,10 @@ const projectsList = [
   },
   {
     id: "item-5",
-    icon: "/assets/img/dev-logo.png",
+    icon: "https://i.ibb.co.com/Jj0FbCBC/dev-logo.png",
     title: "MyTDS SSOF",
     description: "Telkom Indonesia Order Validation System",
-    preview: "/assets/img/mytds-preview.png",
+    preview: "https://i.ibb.co.com/21jvt01X/mytds-preview.png",
     link: "https://www.mytens.co.id/",
     tags: [
       "AI Document Verification",
@@ -78,10 +78,10 @@ const projectsList = [
   },
   {
     id: "item-3",
-    icon: "/assets/img/pertamina-logo.png",
+    icon: "https://i.ibb.co.com/Mxn6NKMk/pertamina-logo.png",
     title: "DPPU - Halim Perdanakusuma",
     description: "Pertamina Inventory Management",
-    preview: "/assets/img/dppu-preview.png",
+    preview: "https://i.ibb.co.com/prXTjV7t/dppu-preview.png",
     tags: [
       "Inventory Management",
       "Scheduling Maintenance",
@@ -116,6 +116,7 @@ export default function Projects() {
                     className="h-full w-full object-contain"
                     width={64}
                     height={64}
+                    loading="lazy"
                   />
                 </div>
                 <div className="flex flex-col gap-1 w-full">
@@ -144,8 +145,6 @@ export default function Projects() {
                   alt={`${project?.id}-preview`}
                   fill
                   className="w-full h-full object-cover transition-all duration-300 group-hover:opacity-70"
-                  placeholder="blur"
-                  blurDataURL={project?.preview}
                   loading="lazy"
                 />
                 {project?.link ? (
