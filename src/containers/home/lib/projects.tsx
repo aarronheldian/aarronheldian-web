@@ -13,10 +13,11 @@ import { Badge } from "@/components/ui/badge";
 const projectsList = [
   {
     id: "item-1",
-    icon: "https://i.ibb.co.com/jvLztMgm/myc-logo.png",
+    icon: "https://storeio.cloud.playcourt.id/ewz-mycarrier-pub-dev/public/img/myc-logo.png",
     title: "MyCarrier",
     description: "Telkom Indonesia Wholesale Platform",
-    preview: "https://i.ibb.co.com/yF7yyD3z/myc-preview.png",
+    preview:
+      "https://storeio.cloud.playcourt.id/ewz-mycarrier-pub-dev/public/img/myc-preview.png",
     link: "https://mycarrier.telkom.co.id/",
     tags: [
       "Customer Portal",
@@ -29,10 +30,11 @@ const projectsList = [
   },
   {
     id: "item-2",
-    icon: "https://i.ibb.co.com/jvLztMgm/myc-logo.png",
+    icon: "https://storeio.cloud.playcourt.id/ewz-mycarrier-pub-dev/public/img/myc-logo.png",
     title: "MyCarrier - Internal",
     description: "Telkom Indonesia Wholesale Platform for Internal",
-    preview: "https://i.ibb.co.com/n8LjwTfV/myc-internal-preview.png",
+    preview:
+      "https://storeio.cloud.playcourt.id/ewz-mycarrier-pub-dev/public/img/myc-internal-preview.png",
     // link: "https://internal-mycarrier.telkom.co.id/",
     tags: [
       "Dashboards",
@@ -47,10 +49,11 @@ const projectsList = [
   },
   {
     id: "item-4",
-    icon: "https://i.ibb.co.com/R4G0DjR2/fxc-logo.png",
+    icon: "https://storeio.cloud.playcourt.id/ewz-mycarrier-pub-dev/public/img/fxc-logo.png",
     title: "Finn & Chips",
     description: "Finn & Chips Smart Order & Content Management System",
-    preview: "https://i.ibb.co.com/TDXk3DhX/fxc-preview.png",
+    preview:
+      "https://storeio.cloud.playcourt.id/ewz-mycarrier-pub-dev/public/img/fxc-preview.png",
     tags: [
       "Customer Portal",
       "Point of Sales",
@@ -63,11 +66,28 @@ const projectsList = [
   },
   {
     id: "item-5",
-    icon: "https://i.ibb.co.com/Jj0FbCBC/dev-logo.png",
+    icon: "https://storeio.cloud.playcourt.id/ewz-mycarrier-pub-dev/public/img/mytens-logo.png",
+    title: "MyTens",
+    description: "Telkom Indonesia Digitalization Business Service",
+    preview:
+      "https://storeio.cloud.playcourt.id/ewz-mycarrier-pub-dev/public/img/mytens-preview.png",
+    link: "https://www.mytens.co.id/",
+    tags: [
+      "Customer Portal",
+      "Order Management",
+      "Service Monitoring",
+      "Request Document",
+      "Multi-Language Support",
+      "After-Sales Service",
+    ],
+  },
+  {
+    id: "item-6",
+    icon: "https://storeio.cloud.playcourt.id/ewz-mycarrier-pub-dev/public/img/mytds-logo.png",
     title: "MyTDS SSOF",
     description: "Telkom Indonesia Order Validation System",
-    preview: "https://i.ibb.co.com/21jvt01X/mytds-preview.png",
-    link: "https://www.mytens.co.id/",
+    preview:
+      "https://storeio.cloud.playcourt.id/ewz-mycarrier-pub-dev/public/img/mytds-preview.png",
     tags: [
       "AI Document Verification",
       "Automated Order Validation",
@@ -78,10 +98,11 @@ const projectsList = [
   },
   {
     id: "item-3",
-    icon: "https://i.ibb.co.com/Mxn6NKMk/pertamina-logo.png",
+    icon: "https://storeio.cloud.playcourt.id/ewz-mycarrier-pub-dev/public/img/dppu-logo.png",
     title: "DPPU - Halim Perdanakusuma",
-    description: "Pertamina Inventory Management",
-    preview: "https://i.ibb.co.com/prXTjV7t/dppu-preview.png",
+    description: "Pertamina Aviation Digital Management System",
+    preview:
+      "https://storeio.cloud.playcourt.id/ewz-mycarrier-pub-dev/public/img/dppu-preview.png",
     tags: [
       "Inventory Management",
       "Scheduling Maintenance",

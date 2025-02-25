@@ -1,6 +1,15 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import {
+  GitIcon,
+  JavaScriptIcon,
+  NextJSIcon,
+  NodeIcon,
+  ReactIcon,
+  TailwindIcon,
+  TypeScriptIcon,
+} from "@/components/svg";
 
 export default function InfiniteHorizontal() {
   const logosRef = useRef<HTMLUListElement | null>(null);
@@ -28,25 +37,27 @@ export default function InfiniteHorizontal() {
     >
       <ul
         ref={logosRef}
-        className="flex items-center justify-center md:justify-start animate-infinite-scroll whitespace-nowrap gap-8"
+        className="flex items-center justify-center md:justify-start animate-infinite-scroll whitespace-nowrap"
       >
         {[
-          "JavaScript",
-          "TypeScript",
-          "React JS",
-          "Next JS",
-          "Tailwind CSS",
-          "Node JS",
-          "Express JS",
-          "MongoDB",
-          "PostgreSQL",
-          "GraphQL",
-          "Docker",
-          "CI/CD",
-          "GIT",
+          <JavaScriptIcon key={1} className="h-12 w-auto text-primary" />,
+          <TypeScriptIcon key={2} className="h-12 w-auto text-primary" />,
+          <ReactIcon key={3} className="h-12 w-auto text-primary" />,
+          <NextJSIcon key={4} className="h-6 w-auto text-primary" />,
+          <TailwindIcon key={5} className="h-6 w-auto text-primary" />,
+          <GitIcon key={6} className="h-6 w-auto text-primary" />,
+          <NodeIcon key={6} className="h-6 w-auto text-primary" />,
+          // "Node JS",
+          // "Express JS",
+          // "MongoDB",
+          // "PostgreSQL",
+          // "GraphQL",
+          // "Docker",
+          // "CI/CD",
+          // "GIT",
         ].map((tech, index) => (
-          <li key={index} className="px-4">
-            <span className="whitespace-nowrap">{tech}</span>
+          <li key={index} className="px-4 whitespace-nowrap">
+            {tech}
           </li>
         ))}
       </ul>
