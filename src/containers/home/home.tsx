@@ -9,6 +9,7 @@ import Footer from "./lib/footer";
 import Projects from "./lib/projects";
 import WrapperSection from "./lib/wrapper-section";
 import { useState } from "react";
+import InfiniteHorizontal from "./lib/infinite-horizontal";
 
 export default function HomeContainer() {
   const { toast } = useToast();
@@ -68,6 +69,7 @@ export default function HomeContainer() {
             Amazing Ventures
           </span>
         </div> */}
+        <InfiniteHorizontal />
         <Hook onCopyEmail={onCopyEmail} />
         <SocialMedia />
         <Footer />

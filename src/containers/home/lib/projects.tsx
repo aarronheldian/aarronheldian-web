@@ -143,7 +143,10 @@ export default function Projects() {
                   src={project?.preview}
                   alt={`${project?.id}-preview`}
                   fill
-                  className="w-full h-full object-contain transition-all duration-300 group-hover:opacity-70"
+                  className="w-full h-full object-cover transition-all duration-300 group-hover:opacity-70"
+                  placeholder="blur"
+                  blurDataURL={project?.preview}
+                  loading="lazy"
                 />
                 {project?.link ? (
                   <Link
