@@ -1,7 +1,7 @@
 "use client";
 
+import { InstagramIcon, LinkedinIcon, XIcon } from "@/components/svg";
 import { Button } from "@/components/ui/button";
-import { InstagramIcon, LinkedinIcon, TwitterIcon } from "lucide-react";
 import Link from "next/link";
 
 export default function SocialMedia() {
@@ -27,7 +27,7 @@ export default function SocialMedia() {
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/aarronheldian/"
           >
-            <LinkedinIcon />
+            <LinkedinIcon className="h-6 w-auto text-primary" />
           </Link>
         </Button>
         <Button
@@ -42,7 +42,7 @@ export default function SocialMedia() {
             rel="noopener noreferrer"
             href="https://www.instagram.com/aheldian/"
           >
-            <InstagramIcon />
+            <InstagramIcon className="h-6 w-auto text-primary" />
           </Link>
         </Button>
         <Button
@@ -57,7 +57,7 @@ export default function SocialMedia() {
             rel="noopener noreferrer"
             href="https://x.com/AarronHeldian/"
           >
-            <TwitterIcon />
+            <XIcon className="h-6 w-auto text-primary" />
           </Link>
         </Button>
       </div>
