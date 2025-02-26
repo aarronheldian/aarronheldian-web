@@ -40,13 +40,13 @@ export default function InfiniteHorizontal() {
         className="flex items-center justify-center md:justify-start animate-infinite-scroll whitespace-nowrap"
       >
         {[
-          <JavaScriptIcon key={1} className="h-12 w-auto text-primary" />,
-          <TypeScriptIcon key={2} className="h-12 w-auto text-primary" />,
-          <ReactIcon key={3} className="h-12 w-auto text-primary" />,
+          <JavaScriptIcon key={1} className="h-8 w-auto text-primary" />,
+          <TypeScriptIcon key={2} className="h-8 w-auto text-primary" />,
+          <ReactIcon key={3} className="h-8 w-auto text-primary" />,
           <NextJSIcon key={4} className="h-6 w-auto text-primary" />,
           <TailwindIcon key={5} className="h-6 w-auto text-primary" />,
           <GitIcon key={6} className="h-6 w-auto text-primary" />,
-          <NodeIcon key={6} className="h-6 w-auto text-primary" />,
+          <NodeIcon key={7} className="h-6 w-auto text-primary" />,
           // "Node JS",
           // "Express JS",
           // "MongoDB",
