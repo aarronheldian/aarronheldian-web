@@ -6,7 +6,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import Hello from "./hello";
+// import Hello from "./hello";
 import { Button } from "@/components/ui/button";
 import {
   AppWindowMacIcon,
@@ -14,6 +14,7 @@ import {
   CircleUserRoundIcon,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { ReactTyped } from "react-typed";
 
 const navItems = [
   {
@@ -45,7 +46,21 @@ export default function Header({ activeSection }: HeaderProps) {
   return (
     <div className="p-4 bg-secondary/50 rounded-2xl flex items-center justify-between border gap-3 shadow-lg w-full sticky top-4 z-50">
       <div className="w-max">
-        <Hello />
+        <ReactTyped
+          strings={[
+            "Hello",
+            "Halo",
+            "Bonjour",
+            "Hola",
+            "Hallo",
+            "Ciao",
+            "Sugeng",
+          ]}
+          typeSpeed={100}
+          backSpeed={50}
+          loop
+          className="text-3xl whitespace-nowrap text-primary font-bold font-courier"
+        />
       </div>
       <div className="flex flex-row gap-2 justify-center items-start">
         {navItems.map(({ id, icon: Icon, tooltip, sectionId }) => (
