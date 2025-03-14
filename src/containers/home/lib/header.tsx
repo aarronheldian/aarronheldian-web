@@ -15,6 +15,8 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ReactTyped } from "react-typed";
+import { ModeToggle } from "@/components/ui/mode-toggle";
+import { Separator } from "@/components/ui/separator";
 
 const navItems = [
   {
@@ -97,6 +99,8 @@ export default function Header({ activeSection }: HeaderProps) {
             </Tooltip>
           </TooltipProvider>
         ))}
+        <Separator orientation="vertical" className="h-9" />
+        <ModeToggle />
       </div>
     </div>
   );
