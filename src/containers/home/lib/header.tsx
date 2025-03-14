@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ReactTyped } from "react-typed";
-import { ModeToggle } from "@/components/ui/mode-toggle";
+import { ModeToggle } from "@/components/fragments/mode-toggle";
 import { Separator } from "@/components/ui/separator";
 
 const navItems = [
