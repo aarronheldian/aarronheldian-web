@@ -1,4 +1,4 @@
-import HomeContainer from "@/containers/home/home";
+import HomeContainer from "@/containers/home";
 import { Metadata } from "next";
 
 export async function generateMetadata(): Promise<Metadata> {
